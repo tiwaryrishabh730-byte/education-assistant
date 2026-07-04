@@ -1,0 +1,21 @@
+# Environments
+.venv/
+.env
+
+# Git
+.git/
+.gitignore
+
+# Cache
+__pycache__/
+*.pyc
+.pytest_cache/
+.adk/
+
+# Artifacts
+agents-cli-manifest.yaml
+GEMINI.md
+README.md
+task.md
+implementation_plan.md
+walkthrough.md

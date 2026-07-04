@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educational Assistant - Pedagogical Guide</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <!-- Background Elements -->
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+
+    <div class="app-container">
+        <header class="app-header">
+            <div class="logo">
+                <span class="icon">🎓</span>
+                <h1>Pedagogical Guide</h1>
+            </div>
+            <p class="subtitle">AI-powered Socratic Cleaner & Explanations Agent</p>
+        </header>
+
+        <main class="chat-container" id="chat-container">
+            <div class="message assistant initial-message">
+                <div class="avatar">🎓</div>
+                <div class="bubble">
+                    <p>Hello! I am your Educational Assistant. Ask me to explain a concept or translate something. I will clean up your thoughts, break down complex jargon, and give you formative feedback!</p>
+                </div>
+            </div>
+        </main>
+
+        <footer class="input-area">
+            <form id="chat-form">
+                <div class="input-wrapper">
+                    <input type="text" id="target-lang" placeholder="Target Language (e.g. French)" autocomplete="off">
+                </div>
+                <div class="input-wrapper main-input">
+                    <textarea id="user-input" placeholder="Explain quantum physics like basically I'm a kid..." rows="1"></textarea>
+                    <button type="submit" id="send-btn" title="Send">
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22 2L11 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M22 2L15 22L11 13L2 9L22 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+            </form>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="/static/app.js"></script>
+</body>
+</html>
